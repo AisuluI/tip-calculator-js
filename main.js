@@ -6,7 +6,6 @@ const each = document.querySelector("#each");
 const button = document.querySelector("#calculate");
 const total = document.querySelector("#total");
 const restartBtn = document.querySelector("#restart");
-const footer = document.querySelector(".footer");
 
 button.addEventListener("click", calculate);
 restartBtn.addEventListener("click", restart);
@@ -28,13 +27,6 @@ function calculate() {
     result.innerHTML = (Number(bill.value) + totalTip).toFixed(2);
   }
 }
-// restartBtn.addEventListener("click", function () {
-//   bill.value = "";
-//   people.value = "";
-//   result.style.visibility = "hidden";
-//   total.style.visibility = "hidden";
-//   each.style.visibility = "hidden";
-// });
 
 function restart() {
   bill.value = "";
